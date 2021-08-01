@@ -1,17 +1,11 @@
 /*---Aquí quitará el formato que genera html5 por defecto*/
-
-
-/*==========================================NO TOCAR TODO ESTE ARCHIVO ==========================================*/
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
 /*---Usamos la altura de TODO el html*/
-
 html {
     height: 100%;
 }
@@ -29,9 +23,7 @@ body {
     text-align: center;
 }
 
-
 /*============NAVBAR=============*/
-
 .header_container {
     grid-area: header;
 }
@@ -48,7 +40,7 @@ a {
     justify-content: flex-end;
     align-items: center;
     box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-    background-color: rgba(66, 66, 72, 0.9);
+    background-color: rgba(45, 110, 18);
     border-radius: 4px;
     margin-bottom: .5rem;
 }
@@ -59,14 +51,14 @@ a {
 
 .logo {
     cursor: pointer;
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 4.5rem;
+    height: 4.5rem;
 }
 
 .logo_letters {
     cursor: pointer;
-    width: 8.9rem;
-    height: 1.5rem;
+    width: 10rem;
+    height: 4rem;
     margin-left: 1rem;
     margin-bottom: .6rem;
 }
@@ -89,48 +81,28 @@ a {
     color: aqua;
 }
 
-.button_Carrito {
-    color: aliceblue;
-    padding: 9px 25px;
-    background-color: rgb(40, 10, 135);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: aqua;
-    color: black;
-}
-
-
 /*=============== CONTENIDO ==================*/
 
-
 /*================= MAIN ==================*/
-
 .main_container {
     color: aliceblue;
     grid-area: main;
     box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
     border-radius: 4px;
-    background-color: rgba(123, 176, 243, 0.5);
+    background-color: rgba(118, 183, 91);
     padding: 1rem;
     margin: 0 .5rem .5rem .5rem;
 }
-
-
-/*IGNORAR POR EL MOMENTO*/
 
 .sidebar {
     grid-area: sidebar;
 }
 
+/*================= FOOTER ==================*/
 .footer_container {
     grid-area: footer;
     color: aliceblue;
-    background-color: rgb(37, 55, 69);
+    background-color: rgb(17, 56, 23);
     margin-top: auto;
 }
 
@@ -142,9 +114,7 @@ button:hover {
 
 /*=============RESPONSIVO NO TOCAR===================*/
 
-
 /*---Aquí se encuentra el grid de la página*/
-
 .body_container {
     display: grid;
     /*gap: 10px; Separacion entre los elementos*/
@@ -152,9 +122,7 @@ button:hover {
     "header" "navbar" "main" "sidebar" "footer";
 }
 
-
 /*Modo Celular*/
-
 @media(min-width: 150px) {
     .body_container {
         grid-template: "header" 0px "navbar" 7rem "main" "sidebar" 0px "footer" 10.9rem;
@@ -162,28 +130,11 @@ button:hover {
     }
 }
 
-
-/*
-@media(min-width: 600px){
-    #body_container {
-        grid-template:
-        "header header header" 100px
-        "navbar main sidebar" 
-        "footer footer footer" 10.9rem /
-        11rem auto 11rem; /*Columna dimension** 
-    }
-} 
-*/
-
-
 /*--Modo Escritorio*/
-
 @media(min-width: 900px) {
     .body_container {
         grid-template: "header header header" 0px "navbar navbar navbar" 5rem ". main sidebar" "footer footer footer" 10.9rem/ 11rem auto 11rem;
         /*Columna dimension*/
     }
 }
-
-
 /*=============RESPONSIVO NO TOCAR===================*/
