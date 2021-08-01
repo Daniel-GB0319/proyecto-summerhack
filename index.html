@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <script src="./js/index.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css"/>
     <link rel="icon" href="./img/achu.png">
     <link rel="stylesheet" href="./style/styleBase.css">
     <title>ACHU</title>
@@ -15,8 +18,6 @@
     <header id="index_header_container" class="header_container"></header>
 
     <!--Barra de Navegacion-->
-    <!--Nombres id(NO SE REPITE): nombreDeLaVista_NombreCajitaPadre_NombreCajita_-->
-    <!--Ej: id: base_navbar_container_-->
     <nav id="index_navbar_container" class="navbar_container">
         <div class="logo_container">
             <img class="logo" src="./img/achu.png" alt="AchuLogo">
@@ -25,20 +26,21 @@
 
         <img class="Logo_equipo" src="./img/cedeg.png" alt="Logo_Cedeg" width="70" height="70">
     </nav>
+
     <!--Vistas-->
     <article id="index_main_container" class="main_container">
         <!--Contenido aquí agregarán todas sus vistas-->
         <h1>Pregunta a Achú:</h1>
+        <div id="webchat" role="main" watermark="false"></div>
+        <script>chatRequested();</script>
     </article>
 
-    <!--Ignorar por el momento-->
     <aside class="sidebar"></aside>
 
     <footer id="index_footer_container" class="footer_container">
         <div class="foot_cta">
             <h3>Integrantes:</h3>
             <p id="numIntegrantes"></p>
-            <!--Aquí escriban sus nombres-->
             <ul id="base_Footer_miembros" class="miembros">
                 <li><a href="https://github.com/Daniel-GB0319">Daniel Gonzalez</a></li>
                 <li><a href="https://github.com/ElizabethNaranjoC">Elizabeth Naranjo</a></li>
@@ -51,12 +53,8 @@
             <p>CEDEGRANGERS &#169 . 2021. Todos los derechos reservados.</p>
         </div>
     </footer>
+    
     <!--Aquí se agregarán los js-->
     <script src="./js/main.js"></script>
 </body>
-<!--Colores https://paletton.com/ -->
-<!--Documentacion 1 https://developer.mozilla.org/es/ -->
-<!--Documentacion 2 https://www.w3schools.com/ -->
-<!--Herramienta Vistas https://zeplin.io/-->
-
 </html>
